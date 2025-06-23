@@ -32,6 +32,7 @@ jobs:
              -r cli,htmlextra
 
       - name: Newmen Report
+        if: always() #ensure that archieve executed irrespetive of the previous step pass or fail
         uses: actions/upload-artifact@v4.6.2
         with:
           name: Newmen Report
