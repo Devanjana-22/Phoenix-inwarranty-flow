@@ -30,7 +30,7 @@ jobs:
              newman run 'inwarrenty-flowcollection Copy.postman_collection.json' \
              -e QA.postman_environment.json \
              -r cli,htmlextra \
-             --reporter-htmlextra-export /newman/index.html
+             --reporter-htmlextra-export ./newman/index.html
 
       - name: Newmen Report
         if: always() #ensure that archieve executed irrespetive of the previous step pass or fail
